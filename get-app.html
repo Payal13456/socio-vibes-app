@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socio Vibes - Download the App</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        :root { 
+          --bs-primary: #8B4513; 
+          --bs-primary-rgb: 139, 69, 19;
+          --bs-body-bg: #fdfbf7;
+          --bs-body-color: #2c1810;
+        }
+        body { 
+          font-family: 'Libre Baskerville', 'Georgia', serif; 
+          background-color: #fdfbf7;
+          margin: 0;
+          padding: 0;
+          color: #2c1810;
+        }
+        .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        
+        /* Custom styles for the download buttons */
+        .download-btn {
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 15px -3px rgba(139, 69, 19, 0.4), 0 4px 6px -2px rgba(139, 69, 19, 0.2);
+        }
+        .download-btn:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 15px 25px -5px rgba(139, 69, 19, 0.6), 0 6px 10px -3px rgba(139, 69, 19, 0.4);
+        }
+
+        /* Icon component (BookOpen) for consistency */
+        .icon-base {
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        /* Specific style for app preview containers to ensure consistent height */
+        .app-preview-container {
+            height: 24rem; /* h-96 = 24rem */
+            max-height: 100%;
+        }
+
+        /* Fallback styling for images that fail to load */
+        .app-preview-placeholder {
+            background-color: #8B4513; /* Primary brown color */
+            color: #fdfbf7; /* Off-white text */
+            font-family: 'sans-serif';
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="h-20 bg-[#fdfbf7]/95 backdrop-blur-sm border-b border-[#8B4513]/10">
+        <div class="container mx-auto px-4 h-full flex items-center justify-between">
+            <a href="./index.html" class="flex items-center gap-2">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-[#8B4513] icon-base">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+                <span class="text-2xl font-bold tracking-tight text-[#2c1810]">Socio Vibes</span>
+            </a>
+            <a href="./index.html" class="font-sans text-sm font-bold text-[#8B4513] hover:text-[#6d360f] transition-colors flex items-center gap-1 no-underline">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="icon-base"><path d="m15 18-6-6 6-6"/></svg>
+                Back to Home
+            </a>
+        </div>
+    </header>
+
+    <!-- Download Hero Section -->
+    <section class="text-center py-20 md:py-32 px-4 bg-[#FAF0E6]/30 border-b border-[#8B4513]/10">
+        <div class="max-w-3xl mx-auto">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight text-[#2c1810]">
+                Start Your Journey. <br/>
+                <span class="text-[#8B4513] italic">Download Socio Vibes.</span>
+            </h1>
+            <p class="text-xl text-[#2c1810]/70 mb-10 max-w-2xl mx-auto font-sans leading-relaxed">
+                Download the APK directly to join the soulful community of writers.
+            </p>
+            
+            <div class="flex flex-col md:flex-row gap-6 justify-center">
+                
+                <!-- Direct APK Download -->
+                <a href="images/socio-vibes-app.apk" download="images/socio-vibes-app.apk" class="download-btn bg-[#8B4513] text-white px-10 py-4 rounded-full font-sans font-bold text-lg uppercase tracking-widest flex items-center justify-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="icon-base">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/>
+                    </svg>
+                    Download APK (Android)
+                </a>
+
+            </div>
+            
+            <p class="mt-8 text-sm text-[#2c1810]/50 font-sans">
+                For direct APK installation, please ensure 'Install from Unknown Sources' is enabled in your settings.
+            </p>
+        </div>
+    </section>
+
+    <!-- App Previews Section - Now with uploaded images -->
+    <section class="py-20 md:py-24 px-4 bg-white">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-[#2c1810]">A Deep Look Inside Socio Vibes</h2>
+            
+            <!-- Grid for 6 screenshots (3 columns x 2 rows on desktop) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Helper function for image loading fallback -->
+                <script>
+                    function onImageError(event) {
+                        event.target.onerror = null; // Prevent infinite loop
+                        event.target.classList.add('app-preview-placeholder');
+                        event.target.classList.remove('h-full', 'w-full', 'object-cover', 'rounded-xl', 'shadow-inner');
+                        event.target.outerHTML = `<div class="app-preview-container w-full app-preview-placeholder rounded-xl border-4 border-white shadow-inner">
+                            Image failed to load. Please check path: ${event.target.src.split('/').pop()}
+                        </div>`;
+                    }
+                </script>
+
+                <!-- Preview 1: The Entry Point (Login) -->
+                <div class="bg-[#FAF0E6] p-6 rounded-2xl shadow-lg border border-[#8B4513]/10">
+                    <div class="app-preview-container w-full bg-white rounded-xl shadow-inner flex items-center justify-center overflow-hidden">
+                        <img src="images/image_504d7c.png" 
+                             alt="Socio Vibes Login Screen" 
+                             class="h-full w-full object-contain rounded-xl" 
+                             onerror="onImageError(event);" />
+                    </div>
+                    <h3 class="text-xl font-bold mt-4 mb-2 text-[#8B4513]">The Entry Point</h3>
+                    <p class="font-sans text-sm text-[#2c1810]/70">A beautiful, vintage-style welcome screen to start your writing journey.</p>
+                </div>
+
+                <!-- Preview 2: The Daily Vibe (Reading Feed) -->
+                <div class="bg-[#FAF0E6] p-6 rounded-2xl shadow-lg border border-[#8B4513]/10">
+                    <div class="app-preview-container w-full bg-white rounded-xl shadow-inner flex items-center justify-center overflow-hidden">
+                        <img src="images/image_504cbd.png" 
+                             alt="Socio Vibes Reading Feed" 
+                             class="h-full w-full object-contain rounded-xl" 
+                             onerror="onImageError(event);" />
+                    </div>
+                    <h3 class="text-xl font-bold mt-4 mb-2 text-[#8B4513]">The Daily Vibe</h3>
+                    <p class="font-sans text-sm text-[#2c1810]/70">Explore a soulful feed of poetry and profound quotes shared by the community.</p>
+                </div>
+
+                <!-- Preview 3: Ask the Muse (Seek/Inspire) -->
+                <div class="bg-[#FAF0E6] p-6 rounded-2xl shadow-lg border border-[#8B4513]/10">
+                    <div class="app-preview-container w-full bg-white rounded-xl shadow-inner flex items-center justify-center overflow-hidden">
+                        <img src="images/image_5049ba.png" 
+                             alt="Socio Vibes AI Muse Inspiration" 
+                             class="h-full w-full object-contain rounded-xl" 
+                             onerror="onImageError(event);" />
+                    </div>
+                    <h3 class="text-xl font-bold mt-4 mb-2 text-[#8B4513]">Ask the Muse</h3>
+                    <p class="font-sans text-sm text-[#2c1810]/70">Whisper a topic and let the AI Muse instantly generate inspiring lines or quotes.</p>
+                </div>
+                
+                <!-- Preview 4: Oracle Chat -->
+                <div class="bg-[#FAF0E6] p-6 rounded-2xl shadow-lg border border-[#8B4513]/10">
+                    <div class="app-preview-container w-full bg-white rounded-xl shadow-inner flex items-center justify-center overflow-hidden">
+                        <img src="images/image_5048fd.png" 
+                             alt="Socio Vibes Oracle Chat" 
+                             class="h-full w-full object-contain rounded-xl" 
+                             onerror="onImageError(event);" />
+                    </div>
+                    <h3 class="text-xl font-bold mt-4 mb-2 text-[#8B4513]">Oracle Chat</h3>
+                    <p class="font-sans text-sm text-[#2c1810]/70">Get personalized writing guidance and assistance from the built-in AI Oracle.</p>
+                </div>
+                
+                <!-- Preview 5: Custom Paper (Compose) -->
+                <div class="bg-[#FAF0E6] p-6 rounded-2xl shadow-lg border border-[#8B4513]/10">
+                    <div class="app-preview-container w-full bg-white rounded-xl shadow-inner flex items-center justify-center overflow-hidden">
+                        <img src="images/image_504977.png" 
+                             alt="Socio Vibes Custom Paper Selection" 
+                             class="h-full w-full object-contain rounded-xl" 
+                             onerror="onImageError(event);" />
+                    </div>
+                    <h3 class="text-xl font-bold mt-4 mb-2 text-[#8B4513]">Custom Paper</h3>
+                    <p class="font-sans text-sm text-[#2c1810]/70">Select different background textures and colors to match the mood of your composition.</p>
+                </div>
+
+                <!-- Preview 6: Your Anthology (Profile) -->
+                <div class="bg-[#FAF0E6] p-6 rounded-2xl shadow-lg border border-[#8B4513]/10">
+                    <div class="app-preview-container w-full bg-white rounded-xl shadow-inner flex items-center justify-center overflow-hidden">
+                        <img src="images/image_504197.png" 
+                             alt="Socio Vibes Author Profile" 
+                             class="h-full w-full object-contain rounded-xl" 
+                             onerror="onImageError(event);" />
+                    </div>
+                    <h3 class="text-xl font-bold mt-4 mb-2 text-[#8B4513]">Your Anthology</h3>
+                    <p class="font-sans text-sm text-[#2c1810]/70">View your published entries, track your appreciation, and manage your author profile.</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="images/socio-vibes-app.apk" download="images/socio-vibes-app.apk" class="download-btn inline-flex items-center justify-center px-10 py-3 text-md font-bold text-white bg-[#8B4513] rounded-full hover:bg-[#6d360f] transition-all no-underline">
+                    Download APK Now
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#2c1810] text-[#fdfbf7] py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="font-sans text-xs text-white/40">
+                © 2024 Socio Vibes. All rights reserved. 
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
